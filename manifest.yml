@@ -16,7 +16,7 @@ spec:
       - name: factaboutcats
         image: bennytrsl1/factaboutcats:1.0
         ports:
-        - containerPort: 80
+        - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
