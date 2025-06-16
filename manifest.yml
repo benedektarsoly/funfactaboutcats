@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: factaboutcats
-        image: bennytrsl1/factaboutcats:latest
+        image: bennytrsl1/factaboutcats:1.0
         ports:
         - containerPort: 80
 ---
