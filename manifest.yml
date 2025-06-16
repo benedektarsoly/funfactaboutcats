@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: factaboutcats
-        image: bennytrsl1/factaboutcats:2.0
+        image: bennytrsl1/factaboutcats:4.0
         ports:
         - containerPort: 3000
 ---
@@ -30,3 +30,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 3000
+      nodePort: 30010
