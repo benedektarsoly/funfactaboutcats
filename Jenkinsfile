@@ -26,7 +26,7 @@ pipeline {
                 script {
                     def started = false
                     for (int i = 0; i < 20; i++) {
-                        def status = sh(script: "curl -s http://localhost:3000 > /dev/null", returnStatus: true)
+                        def status = sh(script: "docker exec test-node-app curl -s http://localhost:3000 > /dev/null", returnStatus: true)
                         if (status == 0) {
                             echo "App is reachable!"
                             started = true
