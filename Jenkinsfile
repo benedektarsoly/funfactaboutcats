@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     def started = false
-                    for (int i = 0; i < 10; i++) {
+                    for (int i = 0; i < 20 i++) {
                         def status = sh(script: "curl -s http://localhost:3000 > /dev/null", returnStatus: true)
                         if (status == 0) {
                             echo "App is reachable!"
